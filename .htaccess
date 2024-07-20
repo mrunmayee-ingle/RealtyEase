@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect /admin to /admin/index.php
+RewriteRule ^admin/?$ admin/index.php [L]
+
+# Redirect /admin/edit to /admin/edit.php?id=1 (example for editing record with ID 1)
+RewriteRule ^admin/edit/([0-9]+)$ admin/edit.php?id=$1 [L]

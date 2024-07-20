@@ -1,0 +1,175 @@
+body {
+    background-color: #0d3b21;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* body {
+    background-color: #0d1b0e; 
+    color: #ffffff; 
+}
+
+.container {
+    background-color: hwb(110 0% 86%); 
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.table {
+    color: #ffffff; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #3e6b4d;
+}
+
+.table th {
+    background-color: #2d3d29; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #344a34;
+}
+
+.table tbody tr:hover {
+    background-color: #4c6a4b; 
+} */
+
+
+.blur-background {
+    background: url('./img/cabin.png') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+.translucent-bg {
+    background-color: rgba(29, 75, 48, 0.4); /* Translucent green color */
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar-brand{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: #ffffff; /* White text for the header */
+
+}
+
+.bg-darkgreen {
+    background-color: #001b0d; 
+}
+
+.btn-lightgreen {
+    background-color: #30de7b; 
+    color: #0c220f;
+    font-weight: bold;
+    font-size: 1.1rem; /* Increase font size */
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.btn-lightgreen:hover {
+    background-color: #2d965b; 
+    color: #0c220f;
+}
+
+.hero-section {
+    /* background: url('./img/cabin.png') no-repeat center center/cover; */
+    height: 100vh;
+}
+
+.hero-text h2{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.hero-text p{
+    font-size: 20px;
+}
+
+
+.hero-text h1,
+.hero-text h2,
+.hero-text p {
+    max-width: 600px; 
+    color: #fff;
+}
+
+.about-section {
+    background-color: #021910; 
+    color: #fff;
+    padding: 50px 0; 
+}
+
+
+.card {
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+}
+
+.card-title {
+    font-size: 25px;
+    margin-top: 5%;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+}
+
+.card-body {
+    margin-top: -10%;
+}
+
+.card-text {
+    color: #555;
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
